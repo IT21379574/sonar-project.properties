@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">User Authentication</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_signup">Click to signup</string>
+    <string name="title_activity_order_summery">OrderSummery</string>
+
+    <string name="code">Code</string>
+    <string name="apply">Apply</string>
+    <string name="procced">Procced</string>
+    <string name="oder">Order</string>
+    <string name="Order_details">Logo Design for a Texttile shop</string>
+    <string name="Order_total">Order Total:</string>
+    <string name="order_total">50$</string>
+    <string name="oder_req01">One day dilvery\n(+25$)</string>
+    <string name="oder_rq02">Add high quality files\n(+30$)</string>
+    <string name="oder_discount">Add promo code\nget 10% discount</string>
+    <string name="Promo_code">Code</string>
+    <string name="checkout">Procced to Checkout</string>
+</resources>

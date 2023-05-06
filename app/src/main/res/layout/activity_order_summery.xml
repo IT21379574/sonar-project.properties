@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderSummery">
+
+    <TextView
+        android:id="@+id/welcome14"
+        android:layout_width="284dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="188dp"
+        android:text="@string/Order_details"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signup3"
+        style="@android:style/Widget.Button"
+        android:layout_width="276dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/checkout"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="598dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcome6"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="488dp"
+        android:text="94.5$"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add high quality files"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="389dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcome12"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="376dp"
+        android:text="+30$"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10% discount"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="435dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcome10"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="268dp"
+        android:text="50$"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome9"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="268dp"
+        android:text="Order Total:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome13"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="432dp"
+        android:text="-10.5$"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome8"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="492dp"
+        android:text="Total:"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One day dilvery"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcome7"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="320dp"
+        android:text="+25$"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:text="Summary"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="109dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
