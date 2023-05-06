@@ -1,64 +1,35 @@
-package com.example.userauthentication
+package com.example.madproject
 
-import android.content.Intent
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ProgressBar
-import android.widget.TextView
-import androidx.cardview.widget.CardView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import android.widget.ArrayAdapter
+import android.widget.ListView
+import android.widget.SearchView
+import com.example.madproject.R
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var btnLogout: Button
-    private lateinit var btnProfile: CardView
-    private lateinit var btnOrders: CardView
+    @SuppressLint("MissingInflatedId")
 
-    private lateinit var auth: FirebaseAuth
-    private lateinit var user: FirebaseUser
-
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        auth = Firebase.auth
 
-        btnLogout = findViewById(R.id.btnLogout)
-        btnProfile = findViewById(R.id.btnProfile)
-        btnOrders = findViewById(R.id.btnOrders)
-        user = auth.currentUser!!
 
-        if (user == null){
-            gotoLogin()
-        }
+        //SEARCH bar
+        val searchView = findViewById<SearchView>(R.id.searchView)
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                // Perform search operation here
+                return false
+            }
 
-        btnLogout.setOnClickListener { logout() }
-        btnProfile.setOnClickListener { gotoProfile() }
-        btnOrders.setOnClickListener { gotoOrders() }
-    }
+            override fun onQueryTextChange(newText: String): Boolean {
+                // Filter search results here
+                return true
+            }
+        })
 
-    private fun gotoOrders() {
-        val intent = Intent(this, Order::class.java)
-        startActivity(intent)
-        finish()
-    }
 
-    private fun gotoProfile() {
-        val intent = Intent(this, Profile::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun logout() {
-        Firebase.auth.signOut()
-        gotoLogin()
-    }
-
-    private fun gotoLogin() {
-        val intent = Intent(this, Login::class.java)
-        startActivity(intent)
-        finish()
     }
 }
