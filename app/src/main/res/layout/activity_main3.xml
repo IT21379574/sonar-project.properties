@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="358dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="620dp"
+        android:text="@string/add_a_new_job"
+        android:textAlignment="center"
+        android:textColor="#131212"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_jobTitle"
+        android:layout_width="358dp"
+        android:layout_height="73dp"
+        android:background="#99A3D8"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/job_title"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <EditText
+        android:id="@+id/edt_desc"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+        android:background="#99A3D8"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/description"
+        android:textSize="@dimen/description"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <EditText
+        android:id="@+id/edt_price"
+        android:layout_width="355dp"
+        android:layout_height="59dp"
+        android:background="#99A3D8"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/price"
+        android:textSize="@dimen/price"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:background="#1111E1"
+        android:backgroundTint="#1111E1"
+        android:text="@string/add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="648dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

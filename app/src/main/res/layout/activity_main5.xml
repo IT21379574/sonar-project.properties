@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF8F8"
+    tools:context=".MainActivity5">
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1111E1"
+        android:text="@string/order"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="384dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="616dp"
+        android:text="@string/logo_brand_identity"
+        android:textColor="#121010"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="131dp"
+        android:layout_height="136dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:text="@string/abc_logo_designer"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="251dp"
+        android:layout_height="118dp"
+        android:text="@string/graphicdesigner"
+        android:textColor="#020202"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1111E1"
+        android:text="@string/orders"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="646dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1111E1"
+        android:text="@string/Order"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="133dp"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/unlimited_design_possibilities_1024x744"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:text="@string/logo_designer"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="232dp"
+        android:layout_height="97dp"
+        android:text="I am your go-to guy if you are looking for; -Logo designer -Brand Gudelines Designer"
+        android:textColor="#020202"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="146dp"
+        android:layout_height="158dp"
+        app:srcCompat="@drawable/design_types_1_1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="242dp"
+        android:layout_height="41dp"
+        android:text="@string/designing_logo"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="244dp"
+        android:layout_height="144dp"
+        android:text="@string/there_s_no_better_way_to_design_a_logo_that_works_for_your_brand_we_will_send_you_multiple_design_to_choose_from_no_templates_no_robots_no_frustrating_apps_just_a_100_unique_logo"
+        android:textColor="#020202"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
