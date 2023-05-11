@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">User Authentication</string>
+    <string name="app_name">Workpal</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -20,4 +20,5 @@
     <string name="oder_discount">Add promo code\nget 10% discount</string>
     <string name="Promo_code">Code</string>
     <string name="checkout">Procced to Checkout</string>
+    <string name="Name">name</string>
 </resources>

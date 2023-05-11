@@ -80,6 +80,10 @@ class ChangePassword : AppCompatActivity() {
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "successfully updated the password", Toast.LENGTH_SHORT).show()
+                    edCurrentPassword.text.clear()
+                    edNewPassword.text.clear()
+                    edConfirmPassword.text.clear()
+
                 }
             }
     }

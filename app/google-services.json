@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "159618557692",
-    "project_id": "android-user-authenticat-3281c",
-    "storage_bucket": "android-user-authenticat-3281c.appspot.com"
+    "project_number": "84405641250",
+    "project_id": "workpal-476ef",
+    "storage_bucket": "workpal-476ef.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:159618557692:android:35b707f49aca25b7151979",
+        "mobilesdk_app_id": "1:84405641250:android:c4e0c417be891410b62a7b",
         "android_client_info": {
           "package_name": "com.example.userauthentication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "159618557692-23le9jm9rune8utgvql4n5voq85qcrfh.apps.googleusercontent.com",
+          "client_id": "84405641250-b9oc90tudo022g8lnlkt3ue18co7g6tk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC_Jc-YR-tXNQKTPPYdUcSUqqYItVr9jY4"
+          "current_key": "AIzaSyD5ChJmsdAotkIT3lHtIgR2dhzGnyvcnbs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "159618557692-23le9jm9rune8utgvql4n5voq85qcrfh.apps.googleusercontent.com",
+              "client_id": "84405641250-b9oc90tudo022g8lnlkt3ue18co7g6tk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

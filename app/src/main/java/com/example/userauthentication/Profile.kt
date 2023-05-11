@@ -12,6 +12,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class Profile : AppCompatActivity() {
@@ -25,6 +27,7 @@ class Profile : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var user: FirebaseUser
+    private lateinit var dbref:DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +44,10 @@ class Profile : AppCompatActivity() {
         btnDeleteAccount = findViewById(R.id.btnDeleteAccount)
         btnProfileBack = findViewById(R.id.btnProfileBack)
         user = auth.currentUser!!
+
+
+
+
 
         if (user == null){
             gotoLogin()

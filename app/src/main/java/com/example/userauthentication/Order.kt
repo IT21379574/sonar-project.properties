@@ -1,11 +1,9 @@
 package com.example.userauthentication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
 
 class Order : AppCompatActivity() {
     private lateinit var tvPrice: TextView
@@ -15,6 +13,7 @@ class Order : AppCompatActivity() {
     private lateinit var edPromo: EditText
     private lateinit var btnApply: Button
     private lateinit var btnProceed: Button
+    private lateinit var Oderbackbtn: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +26,8 @@ class Order : AppCompatActivity() {
         edPromo = findViewById(R.id.Promo_code)
         btnApply = findViewById(R.id.apply)
         btnProceed = findViewById(R.id.procced)
+        Oderbackbtn = findViewById(R.id.Oderbackbtn)
+
 
         tvPrice.text = "50"
         tvNewPrice.text = tvPrice.text
@@ -34,6 +35,13 @@ class Order : AppCompatActivity() {
         cb1.setOnClickListener { checkbox1Click() }
         cb2.setOnClickListener { checkbox2Click() }
         btnApply.setOnClickListener { apply() }
+        btnProceed.setOnClickListener{proccd()}
+        Oderbackbtn.setOnClickListener { back() }
+    }
+    private fun back() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun checkbox2Click() {
@@ -55,4 +63,11 @@ class Order : AppCompatActivity() {
     private fun apply() {
         TODO("Not yet implemented")
     }
+    private fun proccd(){
+        val intent =Intent(this,OrderSummery::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+
 }
