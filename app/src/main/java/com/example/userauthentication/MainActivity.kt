@@ -1,35 +1,23 @@
-package com.example.madproject
+package com.example.paymentmad
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import android.widget.SearchView
-import com.example.madproject.R
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
-
-    public override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
 
+    fun createPay(view: View) {
+        val intent = Intent(this,AddPayment::class.java)
+        startActivity(intent)
+    }
 
-        //SEARCH bar
-        val searchView = findViewById<SearchView>(R.id.searchView)
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String): Boolean {
-                // Perform search operation here
-                return false
-            }
-
-            override fun onQueryTextChange(newText: String): Boolean {
-                // Filter search results here
-                return true
-            }
-        })
-
-
+    fun viewHistory(view: View) {
+        val intent = Intent(this,FetchingData::class.java)
+        startActivity(intent)
     }
 }
